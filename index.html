@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="mb-4">
         <!-- nav -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -56,13 +56,18 @@
     </header>
     <main>
         <!-- 1 row with 3 col -->
-         <div class="container">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-9">catalogo libri + bottone</div>
+                <!-- col1 title+button -->
+                <div class="d-flex justify-content-between col-12 col-lg-9">
+                    <h2>Catalogo libri</h2>
+                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+                <!-- col2 table-->
                 <div class="col-12 col-lg-9">tabella</div>
                 <div class="col-12 col-lg-3">todo+faq</div>
             </div>
-         </div>
+        </div>
     </main>
 
     <!-- bootstrap -->
