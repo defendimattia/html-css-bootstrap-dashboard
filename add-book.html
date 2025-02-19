@@ -61,35 +61,60 @@
     </header>
     <main>
         <div class="container">
-            <h1>Nuovo Libro</h1>
+            <h1 class="mb-4">Nuovo Libro</h1>
             <form>
                 <!-- author row -->
                 <div class="row">
+                    <!-- name -->
                     <div class="col-6 mb-3">
-                        <label for="a-name" class="form-label">Nome Autore</label>
+                        <label for="a-name" class="form-label fw-semibold">Nome Autore</label>
                         <input id="a-name" type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
                             aria-label="Username" aria-describedby="basic-addon1">
                     </div>
+                    <!-- surname -->
                     <div class="col-6">
-                        <label for="a-surname" class="form-label">Cognome Autore</label>
-                        <input id="a-surname" type="text" class="form-control" placeholder="Inserisci il cognome dell'autore"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        <label for="a-surname" class="form-label fw-semibold">Cognome Autore</label>
+                        <input id="a-surname" type="text" class="form-control"
+                            placeholder="Inserisci il cognome dell'autore" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
+                    <!-- title -->
                     <div class="col-12">
-                        <label for="a-title" class="form-label">Titolo</label>
+                        <label for="a-title" class="form-label fw-semibold">Titolo</label>
                         <input id="a-title" type="text" class="form-control" placeholder="Inserisci il titolo del libro"
                             aria-label="Username" aria-describedby="basic-addon1">
-                        <div class="form-text">Titolo versione italiana</div>
+                        <div class="form-text mb-4">Titolo versione italiana</div>
                     </div>
                 </div>
                 <!-- book info row -->
                 <div class="row">
-                    <div class="col-12">genere</div>
-                    <div class="col-12">anno</div>
-                    <div class="col-12">isbn</div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <label for="a-genre" class="form-label fw-semibold">Genere</label>
+                        <select id="a-genre" class="form-select" aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <!-- date -->
+                    <div class="col-12 col-md-4 mb-3">
+                        <label for="a-date" class="form-label fw-semibold">Anno di pubblicazione</label>
+                        <input id="a-date" type="text" class="form-control" placeholder="Inserisci l'anno"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <!-- isbn -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <label for="a-isbn" class="form-label fw-semibold">ISBN#</label>
+                        <input id="a-isbn" type="text" class="form-control" placeholder="Inserisci il codice ISBN#"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
                 </div>
-                <hr>
             </form>
+            <hr class="mb-4">
+        </div>
+        
+
         </div>
 
     </main>
