@@ -24,7 +24,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <!-- logo  -->
-                    <img height="60px" width="60px" src="img/duck.png" alt="duckicon">
+                    <img height="60" width="60" src="img/duck.png" alt="duckicon">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -68,21 +68,19 @@
                     <!-- name -->
                     <div class="col-6 mb-3">
                         <label for="a-name" class="form-label fw-semibold">Nome Autore</label>
-                        <input id="a-name" type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="a-name" type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
                     </div>
                     <!-- surname -->
                     <div class="col-6">
                         <label for="a-surname" class="form-label fw-semibold">Cognome Autore</label>
                         <input id="a-surname" type="text" class="form-control"
-                            placeholder="Inserisci il cognome dell'autore" aria-label="Username"
-                            aria-describedby="basic-addon1">
+                            placeholder="Inserisci il cognome dell'autore">
                     </div>
                     <!-- title -->
                     <div class="col-12">
                         <label for="a-title" class="form-label fw-semibold">Titolo</label>
-                        <input id="a-title" type="text" class="form-control" placeholder="Inserisci il titolo del libro"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="a-title" type="text" class="form-control"
+                            placeholder="Inserisci il titolo del libro">
                         <div class="form-text mb-4">Titolo versione italiana</div>
                     </div>
                 </div>
@@ -100,23 +98,33 @@
                     <!-- date -->
                     <div class="col-12 col-md-4 mb-3">
                         <label for="a-date" class="form-label fw-semibold">Anno di pubblicazione</label>
-                        <input id="a-date" type="text" class="form-control" placeholder="Inserisci l'anno"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="a-date" type="text" class="form-control" placeholder="Inserisci l'anno">
                     </div>
                     <!-- isbn -->
                     <div class="col-12 col-md-4 mb-4">
                         <label for="a-isbn" class="form-label fw-semibold">ISBN#</label>
-                        <input id="a-isbn" type="text" class="form-control" placeholder="Inserisci il codice ISBN#"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="a-isbn" type="text" class="form-control" placeholder="Inserisci il codice ISBN#">
                     </div>
                 </div>
+                <hr class="mb-4">
+                <div class="mb-3">
+                    <label for="note-area" class="form-label fw-semibold">Note</label>
+                    <textarea class="form-control" id="note-area" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
             </form>
-            <hr class="mb-4">
         </div>
-        
-
-        </div>
-
     </main>
 
     <!-- bootstrap -->
